@@ -1,0 +1,44 @@
+alias c='clear'
+alias happy='ssh happy@happy.local'
+export EDITOR=vim
+alias vi=vim
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias c='clear'
+alias df='df -H'
+alias du='du -ch'
+alias fastping='ping -c 100 -s.2'
+alias g='git'
+alias grep='grep --color=auto'
+alias h='history'
+alias header='curl -I'
+alias headerc='curl -I --compress'
+alias ls='ls -G'
+alias ll='ls -lah'
+alias mkdir='mkdir -pv'
+alias mysql='mysql -uroot -proot'
+alias now='date +"%T"'
+alias nowdate='date +"%d-%m-%Y"'
+alias nowtime='now'
+alias path='echo -e ${PATH//:/\\n}'
+alias ping='ping -c 5'
+alias wget='wget -c'
+alias work='cd /Users/sacha/work'
+alias get_emails='grep -R -E -o "\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+\b"'
+
+alias json="python -mjson.tool"
+alias xml="xmllint --format -"
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+PATH=/usr/local/sbin:$PATH
+. ~/.bash-git-prompt/gitprompt.sh
+export HISTTIMEFORMAT="%d/%m/%y %T "
+alias pi="ssh pi@192.168.1.75"
+
+# Vitl commands
+alias mysql_vitl="mysql -uroot -pV1tlGr33ns2018 -h 127.0.0.1 vitl"
+alias composer="php /usr/local/bin/composer.phar"
+vgrep(){ ag $1 ~/work/vitl/vitl-root/; }
+vfind(){ find ~/work/vitl/ -name $1; }
+
